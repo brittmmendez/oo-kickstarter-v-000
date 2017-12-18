@@ -13,7 +13,7 @@ attr_accessor :backers, :title
   if backer.back_project.none?(self)
     backer.back_project(self)
   else
-  end 
+  end
   end
 
 end

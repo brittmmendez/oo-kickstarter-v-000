@@ -8,7 +8,7 @@ end
 
 def back_project(project)
   @backed_projects<<project
-  self.add_backer  
+  prject.add_backer(self)
 end
 
 

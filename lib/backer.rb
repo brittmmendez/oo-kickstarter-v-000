@@ -12,7 +12,7 @@ def back_project(project)
       project.add_backer(self)
     else
     end
-    
+
 end
 
 

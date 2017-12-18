@@ -9,11 +9,11 @@ attr_accessor :backers, :title
   end
 
   def add_backer(backer)
-if @backers.include?(backer)== false
     @backers<<backer
+  if backer.back_project.none?(self)
     backer.back_project(self)
   else
-  end
+  end 
   end
 
 end

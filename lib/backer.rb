@@ -7,7 +7,7 @@ def initialize(name)
 end
 
 def back_project(project)
-  if @back_project.include?(project)= false
+  if @back_project.include?(project)==false
     @backed_projects<<project
     project.add_backer(self)
   else

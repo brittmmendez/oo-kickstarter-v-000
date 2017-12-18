@@ -9,7 +9,7 @@ attr_accessor :backers, :title
   end
 
   def add_backer(backer)
-    @backers<<backer
+    @backers<<backer unless @backers.include?(backer)
     backer.back_project(self)
   end
 

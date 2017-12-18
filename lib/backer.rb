@@ -7,8 +7,11 @@ def initialize(name)
 end
 
 def back_project(project)
-  @backed_projects<<project unless @backed_projects.include?(project)
-  project.add_backer(self)
+  if @back_project.include?(project)= false
+    @backed_projects<<project 
+    project.add_backer(self)
+  else
+  end
 end
 
 

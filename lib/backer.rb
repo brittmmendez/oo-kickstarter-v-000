@@ -8,11 +8,7 @@ end
 
 def back_project(project)
     @backed_projects<<project
-    if project.add_backer.none?(self)
-      project.add_backer(self)
-    else
-    end
-
+      project.@backers<<self
 end
 
 
